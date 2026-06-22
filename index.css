@@ -2,8 +2,43 @@
     margin:0px;
     padding:10px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    color: white;
+    
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e1b4b,
+        #572e81,
+        #0f172a
+    );
 
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
  }
+ 
+ 
+
+/* .container {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+} */
 
  input{
     width:100%;
@@ -14,21 +49,44 @@
     border-radius: 10px;
  }
  button{
-    display: block;
+    
     background-color: rgb(121, 211, 121);
     border-radius: 10px;
     color: black;
     padding: 4px;
     margin-top: 7px;
+    margin-left: 8px;
     border-color: white;
-    margin-left: 30px;
+    border: 1px solid rgb(121, 211, 121);
+    transition: 0.3s ease;
 
 
  }
+ #delete-btn{
+      background-color: aliceblue;
+      color: rgb(121, 211, 121);
+ }
+
+ #delete-btn:active{
+    background-color: rgb(88, 123, 123);
+ }
+
  button:hover{
     color:beige;
     background-color: rgb(156, 112, 197);
-    padding: 6px;
-    box-shadow: 0px 3px 0px;
     cursor: pointer;
+    
+ }
+
+ ul{
+    margin-top: 5px;
+    list-style: none;
+    }
+
+ li{
+   margin-top: 5px;
+ }
+ a{
+   color:  rgb(156, 112, 197);
+
  }
