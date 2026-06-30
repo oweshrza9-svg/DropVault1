@@ -53,8 +53,8 @@ let saveTab= document.getElementById("save-tab");
         domain = leads[i].url;
     }
     let title = leads[i].title;
-    if(title.length > 25){
-        title = title.slice(0,25) + "...";
+    if(title.length > 21){
+        title = title.slice(0,21) + "...";
     }
         listItems += `
         <li class="lead-item">
