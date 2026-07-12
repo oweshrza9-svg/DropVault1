@@ -56,6 +56,8 @@ let saveTab= document.getElementById("save-tab");
     if(title.length > 21){
         title = title.slice(0,21) + "...";
     }
+   // this one creates the list for each press
+   
         listItems += `
         <li class="lead-item">
 
