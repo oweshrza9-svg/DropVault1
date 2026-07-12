@@ -108,6 +108,7 @@ let saveTab= document.getElementById("save-tab");
       render(myleads);
       
      });
+//slice the extra text of the title and link
 
 
 ulEl.addEventListener("click", function(e){
